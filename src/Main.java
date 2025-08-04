@@ -1,17 +1,19 @@
 public class Main {
     public static void main(String[] args) {
         // 1. Employee Profile Setup
-        String name = "Niharika Singh";
-        int age = 23;
-        String city = "Uttar Pradesh";
+        String name = "Priya Mehra";
+        int age = 22;
+        String city = "Pune";
         float joiningPercentage = 86.7f;
         char performanceGrade;
         final String COMPANY_NAME = "HDFC Life";
 
+        // Welcome Message and Employee Info
         System.out.println("Welcome to " + COMPANY_NAME + "!");
         System.out.println("Employee: " + name + " | Age: " + age + " | City: " + city);
         System.out.println("Joining Percentage: " + joiningPercentage);
 
+        // 2. Performance Rating
         if (joiningPercentage > 90) {
             performanceGrade = 'A';
         } else if (joiningPercentage >= 75) {
@@ -24,6 +26,7 @@ public class Main {
 
         System.out.println("Performance Grade: " + performanceGrade);
 
+        // HR Feedback
         switch (performanceGrade) {
             case 'A':
                 System.out.println("HR Feedback: Star Performer");
@@ -41,6 +44,7 @@ public class Main {
                 System.out.println("HR Feedback: Invalid Grade");
         }
 
+        // 3a. Prime Employee Code Generator
         System.out.println("\n--- Prime Employee Codes ---");
         for (int num = 2; num <= 50; num++) {
             boolean isPrime = true;
@@ -54,6 +58,7 @@ public class Main {
             System.out.print(num + " ");
         }
 
+        // 3b. ID Card Pattern Generator
         System.out.println("\n\n--- Badge Pattern ---");
         for (int i = 1; i <= 5; i++) {
             for (int j = 1; j <= i; j++) {
@@ -62,7 +67,8 @@ public class Main {
             System.out.println();
         }
 
-        float monthlyCTC = 63000.00f;
+        // 3c. Compensation Calculator
+        float monthlyCTC = 58000.50f;
         int monthlyCTCInt = (int) monthlyCTC;
         int annualCTC = monthlyCTCInt * 12;
         annualCTC += 10000;
